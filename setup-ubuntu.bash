@@ -1,4 +1,4 @@
-#!/usr/bin/env bash #
+#!/usr/bin/env bash
 # Set up a fresh Ubuntu VM
 # Does not attempt to set any keyboard shortcuts
 

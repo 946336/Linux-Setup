@@ -23,7 +23,7 @@ _help() {
 }
 
 install_prerequisites() {
-    sudo apt-get install -y git
+    sudo apt-get install -y git vim vim-gtk3
 }
 
 unrecognized() { #argument
@@ -40,7 +40,10 @@ setup_vim_maybe_ycm() {
     mkdir -p "$PREFIX"
     pushd "$PREFIX"
 
-    git clone "https://github.com/946336/Dotfiles.git" Dotfiles
+    if [[ -d Dotfiles ]]; then
+    else
+        git clone "https://github.com/946336/Dotfiles.git" Dotfiles
+    fi
     pushd Dotfiles
 
     local install_target=vim-no-ycm

@@ -73,7 +73,7 @@ maybe_install_python() {
     if [[ -z "$FEATURE_PY" ]]; then
         return
     fi
-sudo apt-get install -y python3 pip3
+    sudo apt-get install -y python3 pip3
 }
 
 maybe_install_nginx() {
@@ -122,7 +122,7 @@ do
             shift
             ;;
         -h|--help)
-            help
+            _help
             exit 0
             ;;
         *)
@@ -132,6 +132,8 @@ do
     esac
 done
 unset __lower
+
+exit 0
 
 install_prerequisites
 

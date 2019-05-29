@@ -22,7 +22,7 @@ _help() {
     echo -e "\tnginx"
 }
 
-isntall_prerequisites() {
+install_prerequisites() {
     sudo apt-get install -y git
 }
 

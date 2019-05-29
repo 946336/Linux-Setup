@@ -41,6 +41,7 @@ setup_vim_maybe_ycm() {
     pushd "$PREFIX"
 
     if [[ -d Dotfiles ]]; then
+        ;
     else
         git clone "https://github.com/946336/Dotfiles.git" Dotfiles
     fi

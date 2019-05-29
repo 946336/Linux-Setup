@@ -40,9 +40,7 @@ setup_vim_maybe_ycm() {
     mkdir -p "$PREFIX"
     pushd "$PREFIX"
 
-    if [[ -d Dotfiles ]]; then
-        ;
-    else
+    if [[ ! -d Dotfiles ]]; then
         git clone "https://github.com/946336/Dotfiles.git" Dotfiles
     fi
     pushd Dotfiles

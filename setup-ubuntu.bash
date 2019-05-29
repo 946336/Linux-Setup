@@ -50,7 +50,7 @@ setup_vim_maybe_ycm() {
         install_target=vim
     fi
 
-    ./install-dotfiles.bash "$install_target"
+    sudo ./install-dotfiles.bash "$install_target"
 
     popd
     popd

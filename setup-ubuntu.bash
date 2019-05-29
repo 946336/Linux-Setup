@@ -133,8 +133,6 @@ do
 done
 unset __lower
 
-exit 0
-
 install_prerequisites
 
 setup_vim_maybe_ycm

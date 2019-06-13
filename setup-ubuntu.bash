@@ -23,6 +23,8 @@ _help() {
 }
 
 install_prerequisites() {
+    sudo apt-get update
+    sudo apt-get upgrade
     sudo apt-get install -y git vim vim-gtk3
 }
 

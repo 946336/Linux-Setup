@@ -28,6 +28,10 @@ install_prerequisites() {
     sudo apt-get install -y git vim vim-gtk3
 }
 
+do_cleanup() {
+    sudo apt-get autoremove
+}
+
 unrecognized() { #argument
     echo "Unrecognized argument: $1"
 }
@@ -142,4 +146,6 @@ maybe_install_cxx
 maybe_install_dev
 maybe_install_nginx
 maybe_install_python
+
+do_cleanup
 
